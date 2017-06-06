@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: WooCommerce Beta Tester
- * Plugin URI: https://github.com/woothemes/woocommerce-beta-tester
+ * Plugin URI: https://github.com/woocommerce/woocommerce-beta-tester
  * Description: Run bleeding edge versions of WooCommerce from our Github repo. This will replace your installed version of WooCommerce with the latest tagged release on Github - use with caution, and not on production sites. You have been warned.
  * Version: 1.0.3
  * Author: Mike Jolley
- * Author URI: http://woothemes.com/
+ * Author URI: http://woocommerce.com/
  * Requires at least: 4.2
  * Tested up to: 4.4
  *
