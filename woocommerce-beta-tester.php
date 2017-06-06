@@ -3,7 +3,7 @@
  * Plugin Name: WooCommerce Beta Tester
  * Plugin URI: https://github.com/woothemes/woocommerce-beta-tester
  * Description: Run bleeding edge versions of WooCommerce from our Github repo. This will replace your installed version of WooCommerce with the latest tagged release on Github - use with caution, and not on production sites. You have been warned.
- * Version: 1.0.2
+ * Version: 1.0.3
  * Author: Mike Jolley
  * Author URI: http://woothemes.com/
  * Requires at least: 4.2
@@ -61,7 +61,7 @@ elseif ( ! class_exists( 'WC_Beta_Tester' ) ) :
 				'slug'               => 'woocommerce',
 				'proper_folder_name' => 'woocommerce',
 				'api_url'            => 'https://api.github.com/repos/woocommerce/woocommerce',
-				'github_url'         => 'https://github.com/woothemes/woocommerce',
+				'github_url'         => 'https://github.com/woocommerce/woocommerce',
 				'requires'           => '4.4',
 				'tested'             => '4.4'
 			);
@@ -84,7 +84,7 @@ elseif ( ! class_exists( 'WC_Beta_Tester' ) ) :
 			$this->config[ 'new_version' ]  = $this->get_latest_prerelease();
 			$this->config[ 'last_updated' ] = $this->get_date();
 			$this->config[ 'description' ]  = $this->get_description();
-			$this->config[ 'zip_url' ]      = 'https://github.com/woothemes/woocommerce/zipball/' . $this->config[ 'new_version' ];
+			$this->config[ 'zip_url' ]      = 'https://github.com/woocommerce/woocommerce/zipball/' . $this->config[ 'new_version' ];
 		}
 
 		/**
@@ -306,7 +306,7 @@ if ( ! function_exists( 'wcbt_woocoommerce_not_installed' ) ) {
 
 	function wcbt_woocoommerce_not_installed() {
 
-		echo '<div class="error"><p>' . sprintf( __( 'WooCommerce Beta Tester requires %s to be installed.', 'woocommerce-beta-tester' ), '<a href="http://www.woothemes.com/woocommerce/" target="_blank">WooCommerce</a>' ) . '</p></div>';
+		echo '<div class="error"><p>' . sprintf( __( 'WooCommerce Beta Tester requires %s to be installed.', 'woocommerce-beta-tester' ), '<a href="http://www.woocommerce.com/" target="_blank">WooCommerce</a>' ) . '</p></div>';
 
 	}
 
